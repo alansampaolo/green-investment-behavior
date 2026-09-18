@@ -144,7 +144,7 @@ The estimated effect is large, but the confidence interval is wide and the resul
 - Sparse categories still produced unstable inference.
 - Aggregating rare categories improved estimation stability.
 - Stated green investment intentions are mainly associated with general investment readiness.
-- Actual green investment behavior shows evidence of a stronger role for environmental attitudes.
+- Actual green investment behavior is associated with environmental attitudes instead.
 - Odds Ratios and Average Marginal Effects measure associations, not causal effects.
 - The project should be viewed as an exploratory study due to the limited sample size.
 
