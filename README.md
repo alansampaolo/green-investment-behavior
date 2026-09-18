@@ -137,22 +137,6 @@ However, very high environmental concern (`env.very`) shows the strongest sugges
 
 The estimated effect is large, but the confidence interval is wide and the result remains statistically inconclusive.
 
-## Stated vs Revealed Preferences
-
-The analysis suggests a possible difference between the two outcomes:
-
-```text
-Stated preferences
-        ↓
-More strongly associated with general investment readiness
-
-Revealed preferences
-        ↓
-Suggestive association with environmental concern
-```
-
-Because of the small sample, these findings should be interpreted as exploratory associations rather than definitive evidence.
-
 ## Main Takeaways
 
 - Standard logistic regression was affected by separation.
@@ -160,7 +144,7 @@ Because of the small sample, these findings should be interpreted as exploratory
 - Sparse categories still produced unstable inference.
 - Aggregating rare categories improved estimation stability.
 - Stated green investment intentions are mainly associated with general investment readiness.
-- Actual green investment behavior shows tentative evidence of a stronger role for environmental attitudes.
+- Actual green investment behavior shows evidence of a stronger role for environmental attitudes.
 - Odds Ratios and Average Marginal Effects measure associations, not causal effects.
 - The project should be viewed as an exploratory study due to the limited sample size.
 
