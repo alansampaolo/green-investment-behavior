@@ -1,6 +1,6 @@
 # Green Investment Behavior
 
-Econometric analysis of stated and revealed preferences for green financial instruments using survey data and Firth bias-reduced logistic regression.
+Econometric analysis of stated and revealed preferences for green financial instruments using survey data and Firth bias reduced logistic regression.
 
 ## Project Overview
 
