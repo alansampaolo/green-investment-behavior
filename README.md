@@ -11,7 +11,9 @@ The analysis uses survey data from 97 Master's students and distinguishes betwee
 - `y.ipo` — stated intention to invest in green financial instruments
 - `y.real` — actual investment in green financial instruments
 
-The main objective is to compare the factors associated with what individuals say they would do and what they actually do.
+The main objective is to identify and compare the factors associated with what individuals say they would do and what they actually do.
+
+These associations can help identify relevant candidate factors for future causal research, which could investigate whether any of them have an actual causal effect on green investment behavior.
 
 ## Workflow
 
@@ -87,7 +89,7 @@ and
 y.real = f(X)
 ```
 
-This allows the determinants of stated investment intentions to be compared with those of actual investment behavior.
+This allows the factors associated with stated investment intentions to be compared with those associated with actual investment behavior.
 
 ### 6. Interpretation
 
@@ -146,6 +148,7 @@ The estimated effect is large, but the confidence interval is wide and the resul
 - Stated green investment intentions are mainly associated with general investment readiness.
 - Actual green investment behavior is associated with environmental attitudes instead.
 - Odds Ratios and Average Marginal Effects measure associations, not causal effects.
+- - The identified associations can motivate future causal analysis aimed at testing whether some of these factors have an actual causal effect on green investment behavior.
 - The project should be viewed as an exploratory study due to the limited sample size.
 
 ## Repository Structure
