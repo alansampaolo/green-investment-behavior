@@ -148,7 +148,7 @@ The estimated effect is large, but the confidence interval is wide and the resul
 - Stated green investment intentions are mainly associated with general investment readiness.
 - Actual green investment behavior is associated with environmental attitudes instead.
 - Odds Ratios and Average Marginal Effects measure associations, not causal effects.
-- - The identified associations can motivate future causal analysis aimed at testing whether some of these factors have an actual causal effect on green investment behavior.
+- The identified associations can motivate future causal analysis aimed at testing whether some of these factors have an actual causal effect on green investment behavior.
 - The project should be viewed as an exploratory study due to the limited sample size.
 
 ## Repository Structure
