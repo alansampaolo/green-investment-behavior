@@ -16,7 +16,7 @@ A pilot survey collected **15 responses** from Master's students (8 stating an i
 |---|---|
 | **Preprocessing** | Python: dummy encoding of survey answers (done beforehand; `survey_data.csv` is already encoded), merging of sparse categories, removal of perfectly collinear and constant dummies |
 | **Estimation** | Standard logistic regression showed separation → Firth bias-reduced logistic regression (R, `logistf`) → aggregation of rare categories to reduce sparsity |
-| **Interpretation** | Odds ratios, average marginal effects, confidence intervals |
+| **Interpretation** | Odds ratio, confidence intervals |
 | **Evaluation** | AUC, Brier score, Tjur's R², stratified 5-fold cross-validation and leave-one-profile-out cross-validation |
 
 ## Key takeaways
