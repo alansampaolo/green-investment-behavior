@@ -8,7 +8,7 @@ The objective was to **identify factors associated with individual investment in
 
 ## Data
 
-A pilot survey collected **15 responses** from Master's students (8 stating an intention to invest green, 2 actually investing). Since this is far too small for regression analysis, the 15 responses were **replicated to 97 observations** to develop and test the estimation pipeline. The replicated data are therefore not evidence about investor behaviour: the project should be read as a methodological exercise.
+A pilot survey collected **15 responses** from Master's students (8 stating an intention to invest green, 2 actually investing). Since this is far too small for regression analysis, the 15 responses were **replicated to 97 observations** to develop and test the estimation pipeline. 
 
 ## Approach
 
