@@ -17,13 +17,12 @@ A pilot survey collected **15 responses** from Master's students (8 stating an i
 | **Preprocessing** | Python: dummy encoding of survey answers (done beforehand; `survey_data.csv` is already encoded), merging of sparse categories, removal of perfectly collinear and constant dummies |
 | **Estimation** | Standard logistic regression showed separation → Firth bias-reduced logistic regression (R, `logistf`) → aggregation of rare categories to reduce sparsity |
 | **Interpretation** | Odds ratio, confidence intervals |
-| **Evaluation** | AUC, Brier score, Tjur's R², stratified 5-fold cross-validation and leave-one-profile-out cross-validation |
+| **Evaluation** | AUC, stratified 5-fold cross-validation and leave-one-profile-out cross-validation |
 
 ## Key takeaways
 
 - **Firth regression handles separation** where standard maximum likelihood fails, producing finite estimates; aggregating rare categories further reduces sparsity.
-- **Replication creates spurious results:** with only 15 distinct profiles repeated across 97 rows, standard cross-validation reports an AUC of 1, because test folds contain exact copies of training observations. Holding out each profile entirely (leave-one-profile-out CV), the AUC drops to 0.67 for stated intention, with a Brier score worse than a constant prediction, and to 0.79 for actual investment, a figure that rests on only two distinct investor profiles.
-- In the pilot data, the 2 actual investors both report very high environmental concern, while stated intentions appear linked to general willingness to invest. With 15 respondents these patterns are only anecdotal and would need a much larger real sample to be tested.
+- **Replication creates spurious results:** with only 15 distinct profiles repeated across 97 rows, standard cross-validation reports an AUC of 1, because test folds contain exact copies of training observations. Holding out each profile entirely (leave-one-profile-out CV), the AUC drops to 0.67 for stated intention and to 0.79 for actual investment.
 
 ## Repository
 
