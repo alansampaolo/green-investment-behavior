@@ -25,7 +25,7 @@ A pilot survey collected **15 responses** from Master's students (8 stating an i
 - **Replication creates spurious results:** with only 15 distinct profiles repeated across 97 rows, standard cross-validation reports an AUC of 1, because test folds contain exact copies of training observations. Holding out each profile entirely (leave-one-profile-out CV), the AUC drops to 0.67 for stated intention and to 0.79 for actual investment.
 So the leave-one-profile-out cross-validation revealed that the replicated rows were causing data leakage, which invalidates all previous results.
 
-In conclusion, the project would need to be repeated with a larger sample of real, independent responses.
+The conclusion is that the dataset couldn’t support any empirical result: the replicated rows caused data leakage. The analysis would need to be repeated on a larger sample of real, independent responses.
 
 ## Repository
 
