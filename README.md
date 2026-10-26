@@ -8,20 +8,20 @@ The objective was to **identify factors associated with individual investment in
 
 ## Data
 
-A pilot survey collected **15 responses** from Master's students (8 stating an intention to invest green, 2 actually investing). Since this is far too small for regression analysis, the 15 responses were **replicated to 97 observations** to develop and test the estimation pipeline. 
+A pilot survey collected **15 responses** from Master's students (8 stating an intention to invest green, 2 actually investing). Since this is far too small for regression analysis, the 15 responses were **replicated to 97 observations**. 
 
 ## Approach
 
 | | |
 |---|---|
 | **Preprocessing** | Python: dummy encoding of survey answers (done beforehand; `survey_data.csv` is already encoded), merging of sparse categories, removal of perfectly collinear and constant dummies |
-| **Estimation** | Standard logistic regression showed separation → Firth bias-reduced logistic regression (R, `logistf`) → aggregation of rare categories to reduce sparsity |
+| **Estimation** | Standard logistic regression showed separation → Firth bias-reduced logistic regression (R, `logistf`) |
 | **Interpretation** | Odds ratio, confidence intervals |
 | **Evaluation** | AUC, stratified 5-fold cross-validation and leave-one-profile-out cross-validation |
 
 ## Key takeaways
 
-- **Firth regression handles separation** where standard maximum likelihood fails, producing finite estimates; aggregating rare categories further reduces sparsity.
+- **Firth regression handles separation** where standard maximum likelihood fails, producing finite estimates.
 - **Replication creates spurious results:** with only 15 distinct profiles repeated across 97 rows, standard cross-validation reports an AUC of 1, because test folds contain exact copies of training observations. Holding out each profile entirely (leave-one-profile-out CV), the AUC drops to 0.67 for stated intention and to 0.79 for actual investment.
 So the leave-one-profile-out cross-validation revealed that the replicated rows were causing data leakage, which invalidates all previous results.
 
