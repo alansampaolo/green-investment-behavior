@@ -23,7 +23,8 @@ A pilot survey collected **15 responses** from Master's students (8 stating an i
 
 - **Firth regression handles separation** where standard maximum likelihood fails, producing finite estimates; aggregating rare categories further reduces sparsity.
 - **Replication creates spurious results:** with only 15 distinct profiles repeated across 97 rows, standard cross-validation reports an AUC of 1, because test folds contain exact copies of training observations. Holding out each profile entirely (leave-one-profile-out CV), the AUC drops to 0.67 for stated intention and to 0.79 for actual investment.
-So the leave-one-profile-out cross-validation revealed that the replicated rows were causing data leakage, which invalidates all previous results. The project would need to be repeated with a larger sample of real, independent responses.
+So the leave-one-profile-out cross-validation revealed that the replicated rows were causing data leakage, which invalidates all previous results.
+In conclusion, the project would need to be repeated with a larger sample of real, independent responses.
 
 ## Repository
 
